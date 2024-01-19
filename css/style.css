@@ -1,4 +1,5 @@
-#nav{
+/* search bar */
+#search-bar{
     height: 70px;
     width: 100%;
 
@@ -18,7 +19,36 @@
 .icons .fa-bell{
     color: #ff8f00;
 }
+
+/* side bar */
+#sidebar{
+    height: calc(100vh - 70px);
+    width: 150px;
+
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+    height: calc(100vh - 70px);
+    width: calc(100% - 150px);
+}
+
+
 @media screen and (max-width: 768px) {
+    /* search bar */
     .logo_big{
         display: none;
     }
@@ -31,21 +61,15 @@
     .icons .fa-bell{
         display: block;
     }
-}
-
-
-
-
-
-
-
-#sidebar{
-    height: calc(100vh - 70px);
-    width: 150px;
-
-    background-color: #132a3f;
-}
-#main{
-    height: calc(100vh - 70px);
-    width: calc(100% - 150px);
+    /* side bar */
+    #sidebar{
+        width: 70px;
+    }
+    .my_text{
+        display: none;
+    }
+    /* main */
+    #main{
+        width: calc(100% - 75px);
+    }
 }
