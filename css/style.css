@@ -45,6 +45,13 @@
     height: calc(100vh - 70px);
     width: calc(100% - 150px);
 }
+.my_bg_link{
+    background-color: #1b72e8;
+}
+.my_font{
+    font-size: 12px;
+}
+
 
 
 @media screen and (max-width: 768px) {

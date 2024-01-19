@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <!----------------------------------------  nav bar -------------------------------------------------->
+    <!----------------------------------------  search bar -------------------------------------------------->
     <div id="search-bar">
         <nav class="navbar bg-white pt-2 pt-md-3">
             <div class="container-fluid justify-content-between">
@@ -30,7 +30,7 @@
                     <span class="input-group-text my_bg_search border-0 " id="basic-addon1">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input type="text" class="form-control my_bg_search border-0 ps-2 shadow-none " placeholder="Prova a cercare: Lezioni di Laravel"ame aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control my_bg_search border-0 ps-2 shadow-none my_font " placeholder="Prova a cercare: Lezioni di Laravel"ame aria-label="Username" aria-describedby="basic-addon1">
                 </div>
               </div>
               <div class="icons d-flex gap-3 ms-3 ">
@@ -50,9 +50,9 @@
         <div id="sidebar" class="d-flex flex-column justify-content-between p-4">
             <div id="top-side-bar">
                 <div>
-                    <div class="row">
+                    <div class="row pb-3">
                         <div class="col-3">
-                            <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-house pb-2"></i></a>
+                            <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-house"></i></a>
                         </div>
                         <div class="col">
                             <a class="my_text link-light link-offset-2 link-underline-opacity-0">Home</a>
@@ -60,9 +60,9 @@
                     </div>
                 </div>
                 <div>
-                    <div class="row">
+                    <div class="row pb-3 ">
                         <div class="col-3">
-                            <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-chart-simple pb-2""></i></a>
+                            <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-chart-simple""></i></a>
                         </div>
                         <div class="col">
                             <a class="my_text link-light link-offset-2 link-underline-opacity-0">Stats</a>
@@ -103,6 +103,53 @@
 
         <div id="main">
 
+            <!----------------------------------------  main -------------------------------------------------->
+
+            <!----------------------------------------  top part -------------------------------------------------->
+            <div class="container-fluid ">
+                <div class="row my_bg_link text-white">
+                    <div class="col-6 pb-2">
+                        <div class="pt-3 pb-2 ">
+                            <span class="fs-3 pe-2 text-white">Boolean</span>
+                            <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Piano blaze</button>
+                        </div>
+                        <nav class="fw-medium"  data-bs-theme="dark" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">3 app</button></li>
+                              <li class="breadcrumb-item active" aria-current="page">
+                                <span>
+                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean mobile app</button>
+                                </span>
+                                <span>
+                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean web app</button>
+                                </span>
+                                <span>
+                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean blog app</button>
+                                </span>
+                              </li>
+                            </ol>
+                          </nav>
+                    </div>
+
+                    <div class="col-4 pt-4">
+                        <div class="my_font pb-2 ">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                        </div>
+                        <div class="fs-3">
+                            125
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -113,7 +160,7 @@
 
 
 
-        
+
     </div>
 
 
