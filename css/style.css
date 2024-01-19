@@ -4,6 +4,41 @@
 
     background-color: #f8f9fa;
 }
+.my_bg_search{
+    background-color: #e5e5e5;
+}
+.logo_small{
+    display: none;
+
+    width: 40px;
+}
+.icons .fa-solid{
+    color: #5b5858;
+}
+.icons .fa-bell{
+    color: #ff8f00;
+}
+@media screen and (max-width: 768px) {
+    .logo_big{
+        display: none;
+    }
+    .logo_small{
+        display: block;
+    }
+    .icons .fa-solid{
+        display: none;
+    }
+    .icons .fa-bell{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
 #sidebar{
     height: calc(100vh - 70px);
     width: 150px;
