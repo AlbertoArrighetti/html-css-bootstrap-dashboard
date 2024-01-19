@@ -1,0 +1,16 @@
+#nav{
+    height: 70px;
+    width: 100%;
+
+    background-color: #f8f9fa;
+}
+#sidebar{
+    height: calc(100vh - 70px);
+    width: 150px;
+
+    background-color: #132a3f;
+}
+#main{
+    height: calc(100vh - 70px);
+    width: calc(100% - 150px);
+}
