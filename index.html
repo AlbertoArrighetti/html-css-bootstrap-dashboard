@@ -38,7 +38,15 @@
                 <i class="fa-solid fa-list d-none d-md-inline"></i>
                 <i class="fa-solid fa-circle-question d-none d-md-inline"></i>
                 <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline"></i>
-                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-bell " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item my_font_fam" type="button">Profilo</button></li>
+                        <li><button class="dropdown-item my_font_fam" type="button">Fatturazione</button></li>
+                        <li><button class="dropdown-item my_font_fam" type="button">Login</button></li>
+                    </ul>
+
+                </i>
 
               </div>
             </div>
@@ -111,10 +119,118 @@
 
 
                     <div class="col-12 col-md-4 col-lg-2 pt-4 order-md-3 ">
-                        <div class="my_font pb-2 ">
+                        <span class="my_font p-2">
                             <span>Nuovo Studente</span>
+                        </span>
+
+
+
+
+                        <button class="btn text-white border-1 border-white my_icon_plus p-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                        <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+                        <div class="offcanvas-body">
+
+                            <form class="row g-3 fw-medium ">
+                                <div class="col-12 col-md-6">
+                                  <label for="inputName" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="inputName">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <label for="inputSurname" class="form-label">Cognome</label>
+                                  <input type="text" class="form-control" id="inputSurname">
+                                </div>
+
+
+                                <div class="col-12 col-md-6">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="email" class="form-control" id="inputEmail" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="inputPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword">
+                                </div>
+
+
+                                <div class="col-12 mt-0">
+                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Città</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Stato</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>Scegli...</option>
+                                      <option>Italia</option>
+                                      <option>Germania</option>
+                                      <option>Francia</option>
+                                      <option>Spagna</option>
+                                      <option>Regno Unito</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">CAP</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                
+
+
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+
+
+                                <div class="form-check ms-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                </div>
+
+
+                                <div class="col-1">
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                </div>
+                                <div class="col-1">
+                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                </div>
+                                
+
+
+                              </form>
+
+
+
+
+                        </div>
+                        </div>
+
+
+
+
                     </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,9 +244,6 @@
                             <span class="badge rounded-pill text-bg-dark bg-opacity-50">Piano blaze</span>
                         </div>
 
-
-                        
-
                         <nav data-bs-theme="dark"  style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -139,7 +252,7 @@
                               <li class="breadcrumb-item active" aria-current="page">
                                   <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block ">Boolean mobile app</span>
                                   <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block ">Boolean web app</span>
-                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block  ">Boolean blog app</span>
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block ">Boolean blog app</span>
 
                                   <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-inline d-md-none">+</span>
                               </li>
@@ -147,11 +260,6 @@
                           </nav>
 
                     </div>
-
-
-
-
-
 
 
                     <div class="col-12 col-md-4 col-lg-4 pt-4">
@@ -179,16 +287,16 @@
                             </div>
 
                             <div class="px-3 pb-3 ">
-                                <table class="table my_font fw-medium ">
+                                <table class="table table-responsive table-nowrap table-hover my_font fw-medium ms_table">
                                     <thead>
                                       <tr>
-                                        <th class="fw-medium" width="65%" scope="col">
+                                        <th class="fw-medium" scope="col">
                                             Nome
                                         </th>
-                                        <th class="fw-medium text-center" scope="col">Data inizio</th>
-                                        <th class="fw-medium text-center px-3" scope="col">ROI</th>
-                                        <th class="fw-medium text-center px-3" scope="col">Stato</th>
-                                        <th class="fw-medium text-center ps-0" scope="col">Azioni</th>
+                                        <th class="fw-medium text-center">Data inizio</th>
+                                        <th class="fw-medium text-center" scope="col">ROI</th>
+                                        <th class="fw-medium text-center" scope="col">Stato</th>
+                                        <th class="fw-medium text-center" scope="col">Azioni</th>
                                       </tr>
                                     </thead>
 
@@ -325,7 +433,6 @@
                                     </tbody>
                                  </table>
                             </div>
-
                               
                         </div>
 
@@ -333,7 +440,6 @@
                             <div class="card-header fw-semibold fs-4 p-0 ps-3 pb-3">
                               F.A.Q.
                             </div>
-
 
                             <div class="accordion accordion-flush px-3 py-3 " id="accordionFlushExample">
                                 <div class="accordion-item">
@@ -369,18 +475,9 @@
                               </div>
                         </div>
                     
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     </div>
+
+
                     <div class="col-4 p-3 ps-0 ">
 
                         <div class="card mb-4">
@@ -428,38 +525,9 @@
                                </div>
                         </div>
                                
-                        
-                            
-
-
-                        
-                        
-
                     </div>
                 </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+            </div>           
         </div>
     </div>
 

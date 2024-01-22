@@ -27,7 +27,14 @@
     background-image: url(../img/sidebar-bg.png);
 }
 
+.my_form_position{
+    position: absolute;
+    top: 0;
+    right: 0;
 
+    width: 50%;
+    height: 200px;
+}
 
 
 
@@ -46,9 +53,14 @@
     background-color: #f8f9fa;
 
     overflow-y: auto;
+
+    position: relative;
 }
 .my_bg_link{
     background-color: #1b72e8;
+}
+.my_font_fam{
+    font-family: var(--bs-body-font-family);
 }
 .my_font{
     font-size: 12px;
@@ -63,7 +75,16 @@
     width: 30px;
     height: 30px;
 }
-
+.my_icon_plus{
+    width: 40px;
+    height: 40px;
+}
+.ms_table th:not(:nth-child(1)){
+    width: 90px;
+}
+.my_canvas{
+    width: 800px;
+}
 
 @media screen and (max-width: 768px) {
     /* side bar */
