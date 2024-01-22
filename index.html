@@ -22,8 +22,8 @@
         <nav class="navbar bg-white pt-2 pt-md-3">
             <div class="container-fluid justify-content-between">
               <a class="navbar-brand me-1 me-md-3" href="#">
-                <img class="logo_big" src="./img/logo.svg" alt="Boolean Logo">
-                <img class="logo_small" src="./img/mobile-logo.png" alt="Boolean Mobile Logo">
+                <img class="logo_big d-none d-md-block " src="./img/logo.svg" alt="Boolean Logo">
+                <img class="logo_small d-block d-md-none " src="./img/mobile-logo.png" alt="Boolean Mobile Logo">
               </a>
               <div class="flex-grow-1">
                 <div class="input-group">
@@ -35,9 +35,9 @@
               </div>
               <div class="icons d-flex gap-3 ms-3 ">
                 
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-circle-question"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-list d-none d-md-inline"></i>
+                <i class="fa-solid fa-circle-question d-none d-md-inline"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline"></i>
                 <i class="fa-solid fa-bell"></i>
 
               </div>
@@ -55,7 +55,7 @@
                             <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-house"></i></a>
                         </div>
                         <div class="col">
-                            <a class="my_text link-light link-offset-2 link-underline-opacity-0">Home</a>
+                            <a class="my_text link-light link-offset-2 link-underline-opacity-0 d-none d-md-inline ">Home</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                             <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-chart-simple""></i></a>
                         </div>
                         <div class="col">
-                            <a class="my_text link-light link-offset-2 link-underline-opacity-0">Stats</a>
+                            <a class="my_text link-light link-offset-2 link-underline-opacity-0 d-none d-md-inline ">Stats</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                             <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-signal"></i></a>
                         </div>
                         <div class="col">
-                            <a class="my_text link-light link-offset-2 link-underline-opacity-0">Signals</a>
+                            <a class="my_text link-light link-offset-2 link-underline-opacity-0 d-none d-md-inline ">Signals</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                             <a class="my_icon link-light link-offset-2 link-underline-opacity-0"><i class="fa-solid fa-gear"></i></a>
                         </div>
                         <div class="col">
-                            <a class="my_text link-light link-offset-2 link-underline-opacity-0">Admin</a>
+                            <a class="my_text link-light link-offset-2 link-underline-opacity-0 d-none d-md-inline ">Admin</a>
                         </div>
                     </div>
                 </div>
@@ -108,30 +108,53 @@
             <!----------------------------------------  top part -------------------------------------------------->
             <div class="container-fluid ">
                 <div class="row my_bg_link text-white">
-                    <div class="col-6 pb-2">
+
+
+                    <div class="col-12 col-md-4 col-lg-2 pt-4 order-md-3 ">
+                        <div class="my_font pb-2 ">
+                            <span>Nuovo Studente</span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="col-12 col-md-4 col-lg-6 pb-2">
+
                         <div class="pt-3 pb-2 ">
                             <span class="fs-3 pe-2 text-white">Boolean</span>
-                            <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Piano blaze</button>
+                            <span class="badge rounded-pill text-bg-dark bg-opacity-50">Piano blaze</span>
                         </div>
-                        <nav class="fw-medium"  data-bs-theme="dark" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+
+
+                        
+
+                        <nav data-bs-theme="dark"  style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">3 app</button></li>
+                                <li class="breadcrumb-item">
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50">3 app</span>
+                              </li>
                               <li class="breadcrumb-item active" aria-current="page">
-                                <span>
-                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean mobile app</button>
-                                </span>
-                                <span>
-                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean web app</button>
-                                </span>
-                                <span>
-                                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_font">Boolean blog app</button>
-                                </span>
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block ">Boolean mobile app</span>
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block ">Boolean web app</span>
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-md-inline-block  ">Boolean blog app</span>
+
+                                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-inline d-md-none">+</span>
                               </li>
                             </ol>
                           </nav>
+
                     </div>
 
-                    <div class="col-4 pt-4">
+
+
+
+
+
+
+                    <div class="col-12 col-md-4 col-lg-4 pt-4">
                         <div class="my_font pb-2 ">
                             <span>Studenti online negli ultimi 30 minuti</span>
                         </div>
@@ -140,27 +163,130 @@
                         </div>
                     </div>
 
-                    <div class="col-2">
+
+                </div>
+            </div>
+
+
+            <!----------------------------------------  bottom part -------------------------------------------------->
+
+            <div class="container-fluid p-4 text-black ">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                              Prossime classi
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+
+                              <li class="list-group-item ms-3 ps-0">An item</li>
+
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                              Prossime classi
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+
+                              <li class="list-group-item ms-3 ps-0">An item</li>
+
+                            </ul>
+                          </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     </div>
+                    <div class="col-4">
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                              Featured
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                      <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                    </li>
+                                </ul>
+
+                              </li>
+                            </ul>
+                          </div>
 
 
 
 
+
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
+                            </div>
+                          </div>
+                        
+
+                    </div>
                 </div>
 
             </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         </div>
-
-
-
-
-
-
-
-
-
-
     </div>
 
 

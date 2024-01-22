@@ -9,8 +9,6 @@
     background-color: #e5e5e5;
 }
 .logo_small{
-    display: none;
-
     width: 40px;
 }
 .icons .fa-solid{
@@ -44,6 +42,8 @@
 #main{
     height: calc(100vh - 70px);
     width: calc(100% - 150px);
+
+    background-color: #f8f9fa;
 }
 .my_bg_link{
     background-color: #1b72e8;
@@ -55,28 +55,12 @@
 
 
 @media screen and (max-width: 768px) {
-    /* search bar */
-    .logo_big{
-        display: none;
-    }
-    .logo_small{
-        display: block;
-    }
-    .icons .fa-solid{
-        display: none;
-    }
-    .icons .fa-bell{
-        display: block;
-    }
     /* side bar */
     #sidebar{
         width: 70px;
     }
-    .my_text{
-        display: none;
-    }
     /* main */
     #main{
-        width: calc(100% - 75px);
+        width: calc(100% - 70px);
     }
 }
