@@ -44,6 +44,8 @@
     width: calc(100% - 150px);
 
     background-color: #f8f9fa;
+
+    overflow-y: auto;
 }
 .my_bg_link{
     background-color: #1b72e8;
