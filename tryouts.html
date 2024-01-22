@@ -14,34 +14,56 @@
 </head>
 <body>
   
-  <div id="main">
-    <div class="container-fluid ">
-        <div class="row my_bg_link">
-            <div class="col-6 p3">
-                <div class="py-2">
-                    <span class="fs-3 pe-2">Boolean</span>
-                    <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_btn_font">Piano blaze</button>
-                </div>
-                <nav  data-bs-theme="dark" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_btn_font">Piano blaze</button></li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_btn_font">Piano blaze</button>
-                      <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_btn_font">Piano blaze</button>
-                      <button type="button" class="btn p-0 px-2 bg-opacity-25 bg-black text-white rounded-pill my_btn_font">Piano blaze</button>
-                    </li>
-                  </ol>
-                </nav>
-            </div>
-            <div class="col-4"></div>
-            <div class="col-2"></div>
-
-
-
-
-        </div>
-
+ 
+<div class="accordion w-100" id="basicAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Question #1
+      </button>
+    </h2>
+    <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-mdb-parent="#basicAccordion" style="">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default,
+        until the collapse plugin adds the appropriate classes that we use to style each
+        element. These classes control the overall appearance, as well as the showing and
+        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+        our default variables. It's also worth noting that just about any HTML can go within
+        the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Question #2
+      </button>
+    </h2>
+    <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+      data-mdb-parent="#basicAccordion" style="">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default,
+        until the collapse plugin adds the appropriate classes that we use to style each
+        element. These classes control the overall appearance, as well as the showing and
+        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+        our default variables. It's also worth noting that just about any HTML can go within
+        the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Question #3
+      </button>
+    </h2>
+    <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+      data-mdb-parent="#basicAccordion" style="">
+      <div class="
 
 </div>
     
