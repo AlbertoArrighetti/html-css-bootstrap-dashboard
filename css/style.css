@@ -47,10 +47,10 @@
     font-family: var(--bs-body-font-family);
 }
 .my_font{
-    font-size: 12px;
+    font-size: 14px;
 }
 .my_font_small{
-    font-size: 8px;
+    font-size: 12px;
 }
 
 
@@ -72,7 +72,7 @@
 }
 /* calcolo tabella */
 .ms_table th:not(:nth-child(1)){
-    width: 90px;
+    width: 100px;
 }
 
 @media screen and (min-width: 768px) {
